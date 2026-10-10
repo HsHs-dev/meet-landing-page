@@ -350,6 +350,12 @@ footer button {
 /* Media Queries */
 
 @media (min-width: 40rem) {
+
+  footer {
+    background-image: linear-gradient(#5697a8e0, #5697a8e0),
+      url("./assets/tablet/image-footer.jpg");
+  }
+
   header .hero-image {
     gap: 2rem;
 
@@ -384,7 +390,12 @@ footer button {
 
 }
 
-@media (min-width: 64rem) {
+@media (min-width: 66.5rem) {
+
+  footer {
+    background-image: linear-gradient(#5697a8e0, #5697a8e0),
+      url("./assets/desktop/image-footer.jpg");
+  }
 
   header {
     display: grid;
