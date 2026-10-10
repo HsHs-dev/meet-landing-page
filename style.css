@@ -113,6 +113,14 @@ body {
   justify-content: center;
   align-items: center;
   background-color: var(--color-white);
-  padding: clamp(1rem, 5vw, 2rem);
   font-family: var(--font-family);
 }
+
+/* nav section start */
+
+nav {
+  padding-top: 3rem;
+  padding-inline: 8rem;
+}
+
+/* nav section end */
