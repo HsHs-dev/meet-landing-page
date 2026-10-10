@@ -114,7 +114,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--color-white);
+  background-color: var(--white);
   font-family: var(--font-family);
 }
 
@@ -242,10 +242,23 @@ header .action .download {
     color: var(--cyan-300);
     margin-left: 0.25rem;
   }
+
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+header .action .download:hover {
+  background-color: #71C0D4;
 }
 
 header .action .what-is-it {
   background-color: var(--purple-600);
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+header .action .what-is-it:hover {
+  background-color: #B18BDD;
 }
 
 /* header section end */
@@ -342,6 +355,13 @@ footer button {
     color: var(--purple-300);
     margin-left: 0.25rem;
   }
+
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+footer button:hover {
+  background-color: #B18BDD;
 }
 
 /* footer section end */
