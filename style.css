@@ -234,11 +234,11 @@ header .action button {
 
 header .action .download {
   background-color: var(--cyan-600);
-}
 
-header .action .download span {
-  color: var(--cyan-300);
-  margin-left: 0.25rem;
+  span {
+    color: var(--cyan-300);
+    margin-left: 0.25rem;
+  }
 }
 
 header .action .what-is-it {
@@ -285,4 +285,60 @@ main .title p {
   margin-bottom: 1rem;
 }
 
+main .text-content {
+  margin-bottom: 4rem;
+}
+
 /* main section end */
+
+/* footer section start */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(#5697a8e0, #5697a8e0),
+    url("./assets/mobile/image-footer.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+footer .text-content {
+  padding-top: 0;
+  margin-bottom: 0;
+}
+
+footer .text-content h2 {
+  color: var(--white);
+}
+
+footer .text-content p {
+  color: var(--white);
+}
+
+footer .timeline-node {
+  background-color: var(--white);
+  margin-top: 2rem;
+  transform: translateY(-105%);
+}
+
+footer button {
+  background-color: var(--purple-600);
+  padding-block: 1rem;
+  padding-inline: 2.5rem;
+  border-radius: 1.8125rem;
+  font-size: 1rem;
+  font-weight: var(--font-weight-black);
+  line-height: 1.5;
+  color: var(--white);
+  border: none;
+  margin-bottom: 4rem;
+
+  span {
+    color: var(--purple-300);
+    margin-left: 0.25rem;
+  }
+}
+
+/* footer section end */
