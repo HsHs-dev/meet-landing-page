@@ -157,7 +157,7 @@ body {
 
 .timeline-node {
   aspect-ratio: 1 / 1;
-  max-width: 3.5rem;
+  width: 3.5rem;
   color: var(--slate-600);
   font-size: 1rem;
   font-weight: var(--font-weight-black);
