@@ -114,7 +114,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   background-color: var(--color-white);
   font-family: var(--font-family);
 }
@@ -186,7 +185,9 @@ body {
 
 nav {
   padding-top: 3rem;
-  padding-inline: 8rem;
+  padding-inline: 1.5rem;
+  display: flex;
+  justify-content: center;
 }
 
 /* nav section end */
@@ -200,6 +201,7 @@ header {
 header .hero-image {
   display: flex;
   justify-content: center;
+  overflow: hidden;
   gap: 1.5rem;
 }
 
