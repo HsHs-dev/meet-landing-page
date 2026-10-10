@@ -101,6 +101,7 @@ h6 {
   --slate-300: #d1d1df;
   --white: #fafafa;
 
+  --font-family: "Red Hat Display", sans-serif;
   --font-weight-medium: 500;
   --font-weight-black: 900;
 }
@@ -124,3 +125,88 @@ nav {
 }
 
 /* nav section end */
+
+/* header section start */
+
+header {
+  padding-top: 4rem;
+}
+
+header .hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+header .hero-image .left {
+  max-width: 13rem;
+}
+
+header .hero-image .right {
+  max-width: 13rem;
+}
+
+header .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+header .content h1 {
+  color: var(--slate-900);
+  text-align: center;
+  font-size: 3rem;
+  font-weight: var(--font-weight-black);
+  line-height: 1.1;
+}
+
+header .content p {
+  max-width: 19rem;
+  color: var(--slate-600);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: var(--font-weight-medium);
+  line-height: 1.1;
+}
+
+header .content .action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+header .action button {
+  padding-block: 1rem;
+  padding-inline: 2.5rem;
+  border-radius: 1.8125rem;
+  font-size: 1rem;
+  font-weight: var(--font-weight-black);
+  line-height: 1.5;
+  color: var(--white);
+  border: none;
+}
+
+header .action .download {
+  background-color: var(--cyan-600);
+}
+
+header .action .download span {
+  color: var(--cyan-300);
+  margin-left: 0.25rem;
+}
+
+header .action .what-is-it {
+  background-color: var(--purple-600);
+}
+
+/* header section end */
+
+/* main section start */
+
+
+
+/* main section end */

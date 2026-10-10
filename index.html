@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--  Google Fonts  -->
+  <!-- Font: https://fonts.google.com/specimen/Red+Hat+Display?preview.script=Latn  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
@@ -23,20 +24,28 @@
       <img src="./assets/logo.svg" alt="">
     </a>
   </nav>
+
   <header>
-    <img src="./assets/desktop/image-hero-left.png" alt="">
-    <img src="./assets/desktop/image-hero-right.png" alt="">
-    <h1>Group Chat for Everyone</h1>
-    <p>
-      Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.
-    </p>
-    <button>
-      Download v1.3
-    </button>
-    <button>
-      What is it?
-    </button>
+    <div class="hero-image">
+      <img class="left" class="left" src="./assets/desktop/image-hero-left.png" alt="">
+      <img class="right" src="./assets/desktop/image-hero-right.png" alt="">
+    </div>
+    <div class="content">
+      <h1>Group Chat for Everyone</h1>
+      <p>
+        Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.
+      </p>
+      <div class="action">
+        <button class="download">
+          Download <span>v1.3</span>
+        </button>
+        <button class="what-is-it">
+          What is it?
+        </button>
+      </div>
+    </div>
   </header>
+
   <main>
     <div class="timeline-node" aria-hidden="true">01</div>
     <img src="./assets/desktop/image-woman-in-videocall.jpg" alt="">
