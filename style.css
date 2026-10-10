@@ -104,6 +104,8 @@ h6 {
   --font-family: "Red Hat Display", sans-serif;
   --font-weight-medium: 500;
   --font-weight-black: 900;
+
+  --timeline-height: 5rem;
 }
 
 
@@ -115,6 +117,68 @@ body {
   align-items: center;
   background-color: var(--color-white);
   font-family: var(--font-family);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.text-content h2 {
+  color: var(--slate-900);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: var(--font-weight-black);
+  line-height: 1.1;
+}
+
+.text-content p {
+  max-width: 19rem;
+  color: var(--slate-600);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: var(--font-weight-medium);
+  line-height: 1.5;
+}
+
+.timeline-node {
+  color: var(--slate-600);
+  font-size: 1rem;
+  font-weight: var(--font-weight-black);
+  line-height: 1.5;
+  position: relative;
+  text-align: center;
+  aspect-ratio: 1 / 1;
+  padding: 1rem;
+  border: 1px solid var(--slate-300);
+  border-radius: 50%;
+  margin-top: var(--timeline-height);
+}
+
+.timeline-node::before {
+  position: absolute;
+  content: "";
+  height: var(--timeline-height);
+  width: 1px;
+  background-color: var(--slate-300);
+  top: 0;
+  left: 50%;
+  transform: translateY(-100%);
 }
 
 /* nav section start */
@@ -135,7 +199,6 @@ header {
 header .hero-image {
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 1.5rem;
 }
 
@@ -147,32 +210,7 @@ header .hero-image .right {
   max-width: 13rem;
 }
 
-header .content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
-  padding: 2rem;
-}
-
-header .content h1 {
-  color: var(--slate-900);
-  text-align: center;
-  font-size: 3rem;
-  font-weight: var(--font-weight-black);
-  line-height: 1.1;
-}
-
-header .content p {
-  max-width: 19rem;
-  color: var(--slate-600);
-  text-align: center;
-  font-size: 1rem;
-  font-weight: var(--font-weight-medium);
-  line-height: 1.1;
-}
-
-header .content .action {
+header .text-content .action {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -207,6 +245,33 @@ header .action .what-is-it {
 
 /* main section start */
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+}
 
+
+main .main-image {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 4rem;
+}
+
+main .main-image img {
+  border-radius: 1rem;
+}
+
+main .title p {
+  text-transform: uppercase;
+  color: var(--cyan-600);
+  font-size: 1rem;
+  font-weight: var(--font-weight-black);
+  line-height: 1.1;
+  letter-spacing: 0.25rem;
+  margin-bottom: 1rem;
+}
 
 /* main section end */
