@@ -8,7 +8,7 @@ A solution to the [Meet landing page](https://www.frontendmentor.io/challenges/m
 
 ## Design Preview
 
-\<p align="center"> \<img src="./Screenshot.png" alt="Meet landing page design preview"> \</p>
+<p align="center"> <img src="./Screenshot.png" alt="Meet landing page design preview"> </p>
 
 ## Built with
 
