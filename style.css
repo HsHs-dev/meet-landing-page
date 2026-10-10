@@ -136,6 +136,7 @@ body {
   align-items: center;
   gap: 2rem;
   padding: 2rem;
+  max-width: 34rem;
 }
 
 .text-content h2 {
@@ -147,7 +148,6 @@ body {
 }
 
 .text-content p {
-  max-width: 19rem;
   color: var(--slate-600);
   text-align: center;
   font-size: 1rem;
@@ -197,6 +197,9 @@ nav {
 
 header {
   padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 header .hero-image {
@@ -261,7 +264,7 @@ main .main-image {
   display: grid;
   grid-template: repeat(2, 1fr) / repeat(2, 1fr);
   gap: 1rem;
-  margin-top: 4rem;
+  margin: 4rem 0;
 }
 
 main .main-image img {
@@ -342,3 +345,88 @@ footer button {
 }
 
 /* footer section end */
+
+
+/* Media Queries */
+
+@media (min-width: 40rem) {
+  header .hero-image {
+    gap: 2rem;
+
+    .left {
+      max-width: 24.625rem;
+    }
+
+    .right {
+      max-width: 24.625rem;
+    }
+  }
+
+  .text-content h2 {
+    font-size: 3rem;
+  }
+
+  header .text-content .action {
+    flex-direction: row;
+  }
+
+  main .main-image {
+    grid-template: repeat(1, 1fr) / repeat(4, 1fr);
+  }
+
+  main .title {
+    max-width: 27.8125rem;
+  }
+
+  footer .text-content {
+    max-width: 48rem;
+  }
+
+}
+
+@media (min-width: 64rem) {
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr minmax(0, 34rem) 1fr;
+    align-items: center;
+  }
+
+  header .hero-image {
+    display: contents;
+  }
+
+  header .left {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+  }
+
+  header .text-content {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  header .right {
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: center;
+  }
+
+  .text-content h2 {
+    font-size: 4rem;
+  }
+
+  .text-content p {
+    font-size: 1.125rem;
+  }
+
+  main .text-content,
+  footer .text-content {
+    max-width: none;
+  }
+
+  main .title {
+    max-width: 64rem;
+  }
+}
