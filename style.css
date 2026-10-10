@@ -157,13 +157,14 @@ body {
 }
 
 .timeline-node {
+  aspect-ratio: 1 / 1;
+  max-width: 3.5rem;
   color: var(--slate-600);
   font-size: 1rem;
   font-weight: var(--font-weight-black);
   line-height: 1.5;
   position: relative;
   text-align: center;
-  aspect-ratio: 1 / 1;
   padding: 1rem;
   border: 1px solid var(--slate-300);
   border-radius: 50%;
@@ -250,8 +251,8 @@ main {
   flex-direction: column;
   align-items: center;
   margin: 2rem;
+  margin-bottom: 4rem;
 }
-
 
 main .main-image {
   display: grid;
@@ -264,7 +265,14 @@ main .main-image img {
   border-radius: 1rem;
 }
 
+main .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 main .title p {
+  text-align: center;
   text-transform: uppercase;
   color: var(--cyan-600);
   font-size: 1rem;
